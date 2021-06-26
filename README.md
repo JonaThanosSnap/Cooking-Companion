@@ -5,4 +5,4 @@ Contributors: Jonathan Ge (JonaThanosSnap), NqteTheGreqt, Ria Prakash (riri36), 
 
 Date Created: June 26, 2021
 
-Description: A python program that asks the user for ingredients and determines what dishes they can make based on a databse of recipes.
+Description: A python program that asks the user for ingredients and determines what dishes they can make based on a database of recipes.
