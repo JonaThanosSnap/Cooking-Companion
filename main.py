@@ -59,8 +59,6 @@ with open('recipes_data.csv') as csv_file:
         #splits the ingredients and puts them into an array
 
         else:
-            
-            print(row[5])
 
             ingredient_list = (row[5].split(","))
 
