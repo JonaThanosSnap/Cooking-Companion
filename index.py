@@ -3,14 +3,15 @@
 import csv
 
 import tkinter as tk
+from PIL import ImageTk, Image
 
 #creating tkinter window
 
 window = tk.Tk()
 
-window.geometry("800x500")
+window.geometry("700x450")
 
-window.configure(bg = "")
+window.configure(bg = "#d8d1f9")
 
 #function for getting the inputted ingredients
 
@@ -59,6 +60,8 @@ with open('recipes_data.csv') as csv_file:
         #splits the ingredients and puts them into an array
 
         else:
+            
+            print(row[5])
 
             ingredient_list = (row[5].split(","))
 
@@ -70,13 +73,13 @@ with open('recipes_data.csv') as csv_file:
 
             #if over 80% of the ingredients needed for the dish are owned, it is considered makeable
 
-            if (matches/len(ingredient_list)) >= 0.8:
+            if (matches/len(ingredient_list)) >= 0.6:
 
                 makeable_food.append(row[0]+" is rated "+row[1]+", has a difficulty rating of "+row[2]+", is a "+row[3]+", and takes "+row[4]+"m to make. The ingredients needed are: "+row[5]+"." )
 
 #more tkinter windows for displaying final results
 
-text_box2 = tk.Text(width = 200)
+text_box2 = tk.Text(bg = "#d8d1f9",width = 200)
 
 text_box2.tag_configure("center",justify = "center")
 
