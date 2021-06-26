@@ -1,7 +1,7 @@
 # Cooking-Companion
 EngHack 2021 Quest 1: Python. A tool that allows users to find and explore different culinary recipes based on their owned ingredients. 
 
-Contributors: Jonathan Ge (JonaThanosSnap), NqteTheGreqt, Ria Prakash (riri36), Zakir Muhammad (Zakir-Muhammad) 
+Contributors: Jonathan Ge (JonaThanosSnap), Nathan Philippon (NqteTheGreqt), Ria Prakash (riri36), Zakir Muhammad (Zakir-Muhammad) 
 
 Date Created: June 26, 2021
 
