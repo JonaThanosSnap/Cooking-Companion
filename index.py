@@ -1,7 +1,21 @@
 import csv
+import tkinter as tk
 
-sort_method = str(input("Would you like to sort by Rating, Ease of Prep, Type, Prep Time, or Ingredients? "))
+window = tk.Tk()
 
+def search():
+    global sort_method
+    sort_method = entry.get()
+    window.destroy()
+
+label = tk.Label(text="WHat ingredients do you have?")
+entry = tk.Entry(width = 25)
+button = tk.Button(text="Search",command = search)
+
+label.pack()
+entry.pack()
+button.pack()
+window.mainloop()
 
 if sort_method == "rating":
     stars = int(input("How many stars would you like your dish to be? (0 - 5) "))
